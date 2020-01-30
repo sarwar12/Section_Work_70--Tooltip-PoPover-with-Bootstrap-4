@@ -1,0 +1,150 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/* Full Height with 2 side Website Start */
+.right-side{
+	background-image: url(../img/right-side.jpg);
+	background-size: cover ;
+	background-position: center;
+}
+.left-side {
+  background-color: #333;
+  width: 20%;
+  position: fixed;
+  height: 100%;
+}
+.right-side {
+  width: 80%;
+  margin-left: 20%;
+  height: 100%;
+  display: table;
+  position: relative;
+  z-index: 2;
+}
+html, body {
+  height: 100%;
+}
+.right-side-wrap {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.right-side:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  z-index: -1;
+  opacity: 0.4;
+}
+.right-side-wrap {
+  color: #fff;
+  font-size: 25px;
+  padding: 10%;
+}
+.right-side-wrap h1 {
+  font-size: 65px;
+}
+.right-side-wrap h1 span {
+  color: #ecbc32;
+}
+.boxed-btn {
+  background-color: #ddd;
+  color: #333;
+  font-size: 17px;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+.logo {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  margin: 85px 0;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #ffce43;
+  z-index: -1;
+  border-radius: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  opacity: .2;
+}
+.copyright-text {
+	position: absolute;
+	left: 7px;
+	bottom: 0;
+	color: #ecbc32;
+}
+ul.mainmenu {
+  list-style: none;
+  text-align: center;
+}
+.mainmenu li {
+  padding: 10px 0;
+}
+.mainmenu li a {
+  color: #fff;
+  font-weight: 700;
+}
+.mainmenu li a:hover {
+  color: yellow;
+  border-bottom: 5px solid teal;
+  padding-bottom: 5px;
+}
+.social-links {
+  text-align: center;
+  margin-top: 40px;
+}
+.social-links a i {
+  color: #ddd;
+  margin: 0 5px;
+}
+.social-links a i:hover {
+  background: yellow;
+  padding: 10px;
+  color: #000;
+  border-radius: 20px 0 0 0;
+}
+/* Full Height with 2 side Website Stop */
+/* Modal Popup Content Start */
+.custom-modal .modal-dialog {
+  max-width: 900px;
+}
+.custom-modal .modal-content {
+  border-radius: 0;
+  background: #02abe2;
+  color: #fff;
+}
+.custom-modal .modal-header {
+  border-color: #333;
+}
+/* Modal Popup Content Stop */
